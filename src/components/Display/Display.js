@@ -21,8 +21,9 @@ const Display = () => {
       <div className=" mx-auto bg-blue-50 px-3 grid grid-cols-[1fr] md:grid-cols-[4fr,1fr]">
         {/*======== Main Section ======= */}
         <div>
-          <h1 className="text-3xl text-center font-bold py-4 bg-blue-50">
-            Burn ToDay
+          <img className="w-28 mx-auto rounded-full mt-4 shadow-lg p-2" src="https://media.istockphoto.com/vectors/dumbbell-vector-id1331186720?k=20&m=1331186720&s=612x612&w=0&h=cUrjMsuYARIaWajP1DzhQUONzycHBiw8_-APxBT2TKs=" alt="" />
+          <h1 className="text-3xl text-center font-bold py-4 bg-blue-50 underline">
+            <span className="text-red-600 ">Burn</span> ToDay
           </h1>
           <h3 className="text-xl text-center py-3 bg-blue-50">
             Select your today’s exercise
