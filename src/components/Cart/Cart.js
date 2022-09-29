@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Cart = ({ cart }) => {
   console.log(cart);
@@ -7,6 +9,7 @@ const Cart = ({ cart }) => {
   for (const product of cart) {
     total = total + product.time;
   }
+  const notify = () => toast("Activity Completed !");
   return (
     <div className=" lg:sticky top-4">
       {/*======= User Section ======== */}
@@ -95,10 +98,15 @@ const Cart = ({ cart }) => {
       </div>
 
       {/*==== Activity Complited Button ======= */}
+
       <div className="flex items-center justify-center">
-        <button className="bg-blue-600 text-white px-10 py-3 rounded-md mt-14 hover:bg-green-500 mb-10">
+        <button
+          onClick={notify}
+          className="bg-blue-600 text-white px-10 py-3 rounded-md mt-14 hover:bg-green-500 mb-10"
+        >
           Activity Completed
         </button>
+        <ToastContainer />
       </div>
     </div>
   );
