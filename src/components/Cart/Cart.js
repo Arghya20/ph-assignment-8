@@ -1,7 +1,12 @@
 import React from "react";
-import "./user.jpg";
 
-const Cart = () => {
+const Cart = ({ cart }) => {
+  console.log(cart);
+
+  let total = 0;
+  for (const product of cart) {
+    total = total + product.time;
+  }
   return (
     <div className=" lg:sticky top-4">
       {/*======= User Section ======== */}
@@ -45,7 +50,7 @@ const Cart = () => {
 
       {/* ====Break Section ======== */}
       <h3 className="m-7 font-bold mt-14 -mb-4 ">Add A Break</h3>
-      <div className="flex justify-between p-3 items-center bg-blue-50 m-5 rounded-md ">
+      <div className="flex justify-between p-3 items-center bg-blue-50 m-5 rounded-md gap-2">
         <div className="bg-white rounded-full p-2 hover:bg-blue-300 cursor-pointer">
           <p className="text-center">
             <strong>10</strong>s
@@ -78,10 +83,10 @@ const Cart = () => {
       <div className="flex justify-evenly bg-blue-50 mx-4 p-4 rounded-lg">
         <p>Exercise Time</p>
         <p className="text-gray-400">
-          <span>100</span> Seconds
+          <span>{total}</span> Seconds
         </p>
       </div>
-    
+
       <div className="flex justify-evenly bg-blue-50 mx-4 p-4 rounded-lg mt-4">
         <p>Break time</p>
         <p className="text-gray-400">
@@ -90,8 +95,11 @@ const Cart = () => {
       </div>
 
       {/*==== Activity Complited Button ======= */}
-      <button >Activity Completed</button>
-
+      <div className="flex items-center justify-center">
+        <button className="bg-blue-600 text-white px-10 py-3 rounded-md mt-14 hover:bg-green-500 mb-10">
+          Activity Completed
+        </button>
+      </div>
     </div>
   );
 };
