@@ -3,6 +3,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Cart = ({ cart }) => {
+  const [data, setData] = useState(0);
+
+
+  const TextOnClick = (e) => {
+    setData(e.target.innerText);
+  };
+
 
   let total = 0;
   for (const product of cart) {
@@ -55,17 +62,17 @@ const Cart = ({ cart }) => {
       <div className="flex justify-between p-3 items-center bg-blue-50 m-5 rounded-md gap-2">
         <div className="bg-white rounded-full p-2 hover:bg-blue-300 cursor-pointer">
           <p className="text-center">
-            <strong>10</strong>s
+            <strong onClick={TextOnClick}>10</strong>s
           </p>
         </div>
         <div className="bg-white rounded-full p-2 hover:bg-blue-300 cursor-pointer">
           <p className="text-center">
-            <strong>15</strong>s
+            <strong onClick={TextOnClick}>15</strong>s
           </p>
         </div>
         <div className="bg-white rounded-full p-2 hover:bg-blue-300 cursor-pointer">
           <p className="text-center">
-            <strong>20s</strong>
+            <strong>20</strong>s
           </p>
         </div>
         <div className="bg-white rounded-full p-2 hover:bg-blue-300 cursor-pointer">
@@ -92,7 +99,7 @@ const Cart = ({ cart }) => {
       <div className="flex justify-evenly bg-blue-50 mx-4 p-4 rounded-lg mt-4">
         <p>Break time</p>
         <p className="text-gray-400">
-          <span>100</span> Seconds
+          <span>{data}</span> Seconds
         </p>
       </div>
 

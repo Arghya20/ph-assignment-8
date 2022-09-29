@@ -50,7 +50,7 @@ const Display = () => {
           <p>Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component.</p>
           </div>
           <div className="bg-white p-6 rounded-md shadow-lg mt-10">
-          <h1 className="text-xl font-bold mb-2">3.What is the function of useEffect other than loading data from API ?</h1>
+          <h1 className="text-xl font-bold mb-2">3. What is the function of useEffect other than loading data from API ?</h1>
           <p>By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.</p>
           </div>
         </div>
