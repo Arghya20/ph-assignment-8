@@ -39,6 +39,20 @@ const Display = () => {
           <Cart cart={cart}></Cart>
           <img src="" alt="" />
         </div>
+        <div className="w-full bg-sky-100 mt-16 p-10 rounded-md">
+          <div className="bg-white p-6 rounded-md shadow-lg">
+          <h1 className="text-xl font-bold mb-2">1. How does react work ?</h1>
+          <p>React uses a declarative paradigm that makes it easier to reason about your application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes.</p>
+          </div>
+          <div className="bg-white p-6 rounded-md shadow-lg mt-10">
+          <h1 className="text-xl font-bold mb-2">2. What is the difference between props and state ?</h1>
+          <p>Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component.</p>
+          </div>
+          <div className="bg-white p-6 rounded-md shadow-lg mt-10">
+          <h1 className="text-xl font-bold mb-2">3.What is the function of useEffect other than loading data from API ?</h1>
+          <p>By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.</p>
+          </div>
+        </div>
       </div>
     </div>
   );
