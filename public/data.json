@@ -1,10 +1,44 @@
 [
   {
-    "id": "63352fc0dc155364103ece25",
-
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZuUf0-9V83UvIPSz5qKL0yk0OcaLwiDF_gHpEg02jqmlXyvkA_uG__OWfQvbf-OqRgXY&usqp=CAU",
-
-    "name": "Foot Ball",
-    "time": 10
+    "id": "1",
+    "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=432,fit=crop/bronxltdlm/pexels-li-sun-A83boBxwyEUWLN2W.jpg",
+    "name": "Cardio",
+    "time": 30,
+    "dec": "A solid cardio workout is the backbone of an effective workout regime, which is why we run cardio classes twice daily."
+  },
+  {
+    "id": "2",
+    "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=304,fit=crop/bronxltdlm/keeeeliaaaa-AVVlw6alo1cEBMeR.png",
+    "name": "Lifting",
+    "time": 10,
+    "dec": "Lifting isn’t just about strength. While you will build great core, arm, and leg muscles while lifting."
+  },
+  {
+    "id": "3",
+    "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=304,fit=crop/bronxltdlm/pexels-leon-martinez-dWj8Xkvveyf8X9Ep.jpg",
+    "name": "Press & Back",
+    "time": 10,
+    "dec": "There are few better full-body workouts available than our press and back classes."
+  },
+  {
+    "id": "4",
+    "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=496,h=304,fit=crop/bronxltdlm/pexels-cottonbro-ARqG6v79Jaueplj8.jpg",
+    "name": "AirYoga",
+    "time": 35,
+    "dec": "Sure, you’ve heard or regular yoga, but what about trying out some new moves while floating feet into the air?"
+  },
+  {
+    "id": "5",
+    "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=304,fit=crop/bronxltdlm/box-mjWRMro4Rzfrqvq5.png",
+    "name": "Cardio Boxing",
+    "time": 20,
+    "dec": "Sometimes nothing feels as good as putting on your gloves and kicking the crap out of a boxing bag or a set of pads."
+  },
+  {
+    "id": "6",
+    "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=432,fit=crop/bronxltdlm/allef-vinicius-BQYl_VxaPoU-unsplash-A1jO4b3r5NfeDGDw.jpg",
+    "name": "Body Building",
+    "time": 15,
+    "dec": "Want to tone, get muscle definition, and feel stronger in your everyday life"
   }
 ]
